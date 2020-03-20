@@ -104,7 +104,7 @@ header {
   font-size: 0.938em;
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
-  transition: all 0.1s;
+  transition: all 0.2s;
 }
 .header__top-button:hover {
   box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.9);
@@ -122,6 +122,11 @@ header {
 }
 .header__top-link-form {
   font-size: 1em;
+}
+.header__top-phone:hover,
+.header__top-link-form:hover {
+  color: #FFD800;
+  transition: all 0.2s;
 }
 .header__main-wrap {
   position: relative;
