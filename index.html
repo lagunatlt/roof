@@ -32,11 +32,26 @@
 	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
 	<link rel="stylesheet" href="css/slick.css">
 	<link rel="stylesheet" href="css/slick-theme.css">
+	<!-- <link rel="stylesheet" href="css/aos.css"> -->
 	<link rel="stylesheet" href="css/style.css">
 	<!-- <link rel="stylesheet" href="css/media.css"> -->
 
 </head>
 <body>
+	<div class="modal-content" id="hidden-content" style="display: none;">
+		<div class="form__modal">
+			<p class="form-main__title" id="modal-title">Узнайте стоимость работ</p>
+			<p class="form-main__title">прямо сейчас!</p>
+			<form action="send.php" id="form1" class="form" method="post">
+	
+				<input name="formname" type="text" class="forminput" id="formName">
+				<input name="name" type="text" class="forminput">
+				<input name="email" type="email" class="forminput">
+				<input type="tel" class="form__input tel" name="phone" required="" placeholder="ваш номер телефона" id="phone1">
+				<button class="button button__form" id="modalB" type="submit">Заказать звонок</button>
+			</form>
+		</div>
+	</div>
 	<header class="header__bg blue-bg">
 		<div class="container">
 			<div class="header__wrap">
@@ -47,10 +62,10 @@
 						</div>
 						<span class="header__top-desc">Ремонт и монтаж кровли Строительство крыши под ключ</span>
 					</div>
-					<a href="#" class="header__top-button">бесплатная консультация</a>
+					<a class="header__top-button" data-fancybox data-src="#hidden-content" href="javascript:;">бесплатная консультация</a>
 					<div class="header__top-contact">
-						<a href="#" class="header__top-phone">8 (800) 800-88-88</a>
-						<a href="#" class="header__top-link-form">Заказать обратный звонок</a>
+						<a class="header__top-phone" data-fancybox data-src="#hidden-content" href="javascript:;">8 (800) 800-88-88</a>
+						<a class="header__top-link-form" data-fancybox data-src="#hidden-content" href="javascript:;">Заказать обратный звонок</a>
 					</div>
 				</div>
 				<div class="header__main-wrap">
@@ -69,7 +84,7 @@
 							<input name="formname" type="text" class="forminput">
 							<input name="name" type="text" class="forminput">
 							<input name="email" type="email" class="forminput">
-							<input type="tel" class="form__input tel" name="phone" placeholder="номер телефона" id="phone2">
+							<input type="tel" class="form__input tel" name="phone" placeholder="ваш номер телефона" id="phone2">
 							<button id="button1" class="button button__form button-click" type="submit" data-mainform="true" data-desc="Узнать стоимость работ">отправить заявку</button>
 						</form>
 					</div>
@@ -82,27 +97,27 @@
 			<div class="why__wrap">
 				<h2 class="why__title">Почему выбирают нас?</h2>
 				<div class="why__items">
-					<div class="why__item">
+					<div data-aos="fade-up" class="why__item">
 						<p class="why__item-title">Гарантия по договору</p>
 						<p class="why__item-desc">Официально даем гарантию на работы от 5 лет</p>
 					</div>
-					<div class="why__item">
+					<div data-aos="fade-up" class="why__item">
 						<p class="why__item-title">Цена на работы</p>
 						<p class="why__item-desc">Цены на работы прописаны в договоре и не вырастут</p>
 					</div>
-					<div class="why__item">
+					<div data-aos="fade-up" class="why__item">
 						<p class="why__item-title">Бесплатный выезд на объект</p>
 						<p class="why__item-desc">Сметчик бесплатно приедет и	рассчитает стоимость работы</p>
 					</div>
-					<div class="why__item">
+					<div data-aos="fade-up" class="why__item">
 						<p class="why__item-title">Материалы от производителя</p>
 						<p class="why__item-desc">Закупаем оптом напрямую у производителей, что делает наши цены ниже на 20-35%</p>
 					</div>
-					<div class="why__item">
+					<div data-aos="fade-up" class="why__item">
 						<p class="why__item-title">Работаем без проживания на объекте</p>
 						<p class="why__item-desc">Мы работаем без проживания на объекте</p>
 					</div>
-					<div class="why__item">
+					<div data-aos="fade-up" class="why__item">
 						<p class="why__item-title">Наличный и	Безналичный расчет</p>
 						<p class="why__item-desc">Мы работаем как с наличным, так и безналичным расчетом</p>
 					</div>
@@ -192,7 +207,7 @@
 						<input name="formname" type="text" class="forminput">
 						<input name="name" type="text" class="forminput">
 						<input name="email" type="email" class="forminput">
-						<input type="tel" class="form__input tel" name="phone" placeholder="номер телефонa" id="phone2">
+						<input type="tel" class="form__input tel" name="phone" placeholder="ваш номер телефонa" id="phone2">
 						<button id="button1" class="button button__form button-click" type="submit" data-mainform="true" data-desc="Узнать стоимость работ">отправить заявку</button>
 					</form>
 				</div>
@@ -354,7 +369,7 @@
 							</ul>
 							<div class="services__footer">
 								<span class="services__price">1000 p</span>
-								<a href="#" class="button button__form button__main">Оставить заявку</a>
+								<a class="button button__form button__main" data-fancybox data-src="#hidden-content" href="javascript:;">Оставить заявку</a>
 							</div>
 						</div>
 						
@@ -372,7 +387,8 @@
 							</ul>
 							<div class="services__footer">
 								<span class="services__price">1000 p</span>
-								<a href="#" class="button button__form button__main">Оставить заявку</a>
+								<a class="button button__form button__main" data-fancybox data-src="#hidden-content" href="javascript:;">Оставить
+									заявку</a>
 							</div>
 						</div>
 					</div>
@@ -389,7 +405,8 @@
 							</ul>
 							<div class="services__footer">
 								<span class="services__price">1000 p</span>
-								<a href="#" class="button button__form button__main">Оставить заявку</a>
+								<a class="button button__form button__main" data-fancybox data-src="#hidden-content" href="javascript:;">Оставить
+									заявку</a>
 							</div>
 						</div>
 					</div>
@@ -406,7 +423,8 @@
 							</ul>
 							<div class="services__footer">
 								<span class="services__price">1000 p</span>
-								<a href="#" class="button button__form button__main">Оставить заявку</a>
+								<a class="button button__form button__main" data-fancybox data-src="#hidden-content" href="javascript:;">Оставить
+									заявку</a>
 							</div>
 						</div>
 					</div>
@@ -423,7 +441,8 @@
 							</ul>
 							<div class="services__footer">
 								<span class="services__price">1000 p</span>
-								<a href="#" class="button button__form button__main">Оставить заявку</a>
+								<a class="button button__form button__main" data-fancybox data-src="#hidden-content" href="javascript:;">Оставить
+									заявку</a>
 							</div>
 						</div>
 					</div>
@@ -436,7 +455,7 @@
 			<div class="calculation__wrap">
 				<h2 class="border border-gray">Расчитайте стоимость работ</h2>
 				<div class="calc-main">
-					<a href="#" class="button button__calc">БЫСТРЫЙ РАСЧЕТ СТОИМОСТИ КРОВЛИ</a>
+					<a data-fancybox data-src="#hidden-content" href="javascript:;" class="button button__calc">БЫСТРЫЙ РАСЧЕТ СТОИМОСТИ КРОВЛИ</a>
 				</div>
 			</div>
 		</div>
@@ -510,7 +529,7 @@
 								<input name="formname" type="text" class="forminput">
 								<input name="name" type="text" class="forminput">
 								<input name="email" type="email" class="forminput">
-								<input type="tel" class="form__input tel" name="phone" placeholder="номер телефона" id="phone2">
+								<input type="tel" class="form__input tel" name="phone" placeholder="ваш номер телефона" id="phone2">
 								<button id="button1" class="button button__form button-click" type="submit" data-mainform="true"
 									data-desc="Есть вопросы">Отправить заявку</button>
 							</form>
@@ -555,8 +574,8 @@
 			<div class="container contact__contact-wrap">
 				<div class="contact__contact-form">
 					<p>Московская область, Воскресенский район пгт Белоозерский, ул. Коммунальная 53-54 павильон Д-7</p>
-					<a href="#" class="contact__phone">8 (800) 888-88-88</a>
-					<a href="#" class="contact__phone">8 (800) 888-88-88</a>
+					<a data-fancybox data-src="#hidden-content" href="javascript:;" class="contact__phone">8 (800) 888-88-88</a>
+					<a data-fancybox data-src="#hidden-content" href="javascript:;" class="contact__phone">8 (800) 888-88-88</a>
 				</div>
 			</div>
 		</div>
@@ -582,8 +601,8 @@
 							<a href="#" class="s-wh"></a>
 						</div>
 						<div class="footer__contact border border-yellow">
-							<a href="#" class="footer__phone">8 (800) 800-88-88</a>
-							<a href="#" class="footer__link-form">Заказать обратный звонок</a>
+							<a data-fancybox data-src="#hidden-content" href="javascript:;" class="footer__phone">8 (800) 800-88-88</a>
+							<a data-fancybox data-src="#hidden-promo" href="javascript:;" class="footer__link-form">Заказать обратный звонок</a>
 						</div>
 					</div>
 				</div>
@@ -595,28 +614,28 @@
 		</div>
 	</footer>
 
-		<!-- <div class="promo-modal">
+		<div class="promo-modal" id="hidden-promo" style="display: none;">
 			<div class="container">
 				<div class="promo__wrap">
 					<div class="promo__main">
 						<h5 class="promo__main-title">СПЕЦИАЛЬНО ДЛЯ ВАС</h5>
-						<p class="promo__main-desc">Оставьте заявку прямо сейчас и получите демонтаж старой кровли</p>
+						<p class="promo__main-desc">Оставьте заявку<br>прямо сейчас<br>и получите демонтаж старой кровли</p>
 						<p class="promo__main-footer">БЕСПЛАТНО</p>
 					</div>
-					<div class="promo__form">
+					<div class="promo__form form-const">
 						<p class="form-main__title">Демонтаж старой кровли</p>
 						<form action="send.php" id="form2" class="form" method="post">
 							<input name="formname" type="text" class="forminput">
 							<input name="name" type="text" class="forminput">
 							<input name="email" type="email" class="forminput">
-							<input type="tel" class="form__input tel" name="phone" placeholder="Введите ваш телефон" id="phone2">
+							<input type="tel" class="form__input tel" name="phone" placeholder="ваш номер телефона" id="phone2">
 							<button id="button1" class="button button__form button-click" type="submit" data-mainform="true"
 								data-desc="Демонтаж старой кровли">Отправить заявку</button>
 						</form>
 					</div>
 				</div>
 			</div>
-		</div> -->
+		</div>
 
 
 
@@ -635,6 +654,7 @@
 	<script src="./js/jq341.js"></script>
 	<script src="./js/slick.min.js"></script>
 	<script src="./js/jquery.fancybox.min.js"></script>
+	<!-- <script src="./js/aos.js"></script> -->
 	<script src="./js/main.js"></script>
 </body>
 </html>

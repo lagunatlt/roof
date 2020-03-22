@@ -239,7 +239,7 @@ form input {
   width: 304px;
   height: 47px;
   margin-bottom: 51px;
-  padding-left: 81px;
+  padding-left: 65px;
   font-weight: 300;
   font-size: 1.125em;
   background: #FFFFFF;
@@ -680,6 +680,7 @@ div.completed__item:nth-child(3) {
 .services__item-img {
   position: relative;
   width: 100%;
+  height: 346px;
   max-height: 226px;
   /* border-radius: 10px 10px 0 0; */
   overflow: hidden;
@@ -1091,6 +1092,9 @@ div.completed__item:nth-child(3) {
   text-decoration: none;
   margin-bottom: 15px;
 }
+.contact__contact-form a:hover {
+  color: #fff;
+}
 .contact__contact-form>p:nth-child(1) {
   margin-bottom: 25px;
 }
@@ -1171,6 +1175,7 @@ footer {
   background-position: center;
   margin-left: 10px;
   margin-right: 10px;
+  transition: all 0.1s;
 }
 .s-vb {
   background-image: url('../img/vb.svg');
@@ -1178,4 +1183,86 @@ footer {
 .s-wh {
   background-image: url('../img/wh.svg');
   margin-right: 25px;
+}
+.s-vb:hover,
+.s-wh:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 0px rgba(255, 255, 255, 0.7);
+  animation: soc 0.8s linear infinite;
+}
+@keyframes soc {
+  0% {
+    box-shadow: 0 0 0px rgba(255, 255, 255, 0.7);
+  }
+  50%{
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+  }
+  100% {
+    box-shadow: 0 0 0px rgba(255, 255, 255, 0.7);
+  }
+}
+/* ----------------- */
+
+.promo__wrap {
+  width: 853px;
+  height: 468px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: rgba(21, 43, 75, 0.8);
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  padding: 35px 20px;
+}
+.promo__main-title,
+.promo__main-footer {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.875em;
+  line-height: 160%;
+  text-align: center;
+  color: #FFD800;
+}
+.promo__main-desc {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.625em;
+  line-height: 160%;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 0 28px;
+}
+.promo__main {
+  height: 345px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.modal-content .form-main__title {
+  margin-bottom: 0;
+  text-align: center;
+}
+.modal-content .form-main__title:nth-child(2) {
+  margin-bottom: 55px;
+}
+.fancybox-content {
+  padding: 34px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 33px #000;
+}
+#hidden-promo{
+  box-shadow: none;
+  background-color: transparent;
+}
+#hidden-promo .fancybox-close-small {
+  background-color: #fff;
+  border-radius: 50%;
+}
+#hidden-promo .fancybox-close-small {
+  right: 37px;
+  top: 22px;
 }
