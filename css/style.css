@@ -55,7 +55,7 @@ h2 {
   font-size: 2.250em;
   color: #000000;
   text-transform: uppercase;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 
 /* -------------- */
@@ -260,9 +260,9 @@ form input {
   border-radius: 5px;
   transition: all 0.1s;
 }
-.button__form {
-  /* padding: 9px 26px 10px 26px; */
-}
+/* .button__form {
+  padding: 9px 26px 10px 26px;
+} */
 .button__form:hover {
   box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.3);
   transform: translateY(-1px);
@@ -826,6 +826,7 @@ div.completed__item:nth-child(3) {
   box-sizing: border-box;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
+  z-index: 1;
 }
 .how__item::before {
   position: absolute;
@@ -838,6 +839,7 @@ div.completed__item:nth-child(3) {
   font-size: 170px;
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.21);
+  z-index: -1;
 }
 .how__item:nth-child(1)::before {
   content: '1';
@@ -883,6 +885,10 @@ div.completed__item:nth-child(3) {
 .answers__wrap {
   position: relative;
   z-index: 2;
+}
+.answers__tabs {
+  width: 60%;
+  margin-left: 20px;
 }
 .answers-bg::before {
   position: absolute;
@@ -966,6 +972,112 @@ div.completed__item:nth-child(3) {
   transition: max-height 0.2s ease-in-out;
   color: #fff;
   font-size: 1.375em;
+  font-weight: 300;
   line-height: 160%;
   margin-bottom: 15px;
+}
+.answers .form-const {
+  padding: 33px 38px;
+}
+.answers__form-wrap {
+  width: 375px;
+  margin-top: -30px;
+}
+.answers__title {
+  font-weight: bold;
+  font-size: 1.500em;
+  line-height: 160%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFD800;
+  padding-bottom: 10px;
+}
+
+/* ----------- */
+.advantages__title-desc {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+  font-size: 1.125em;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 90px;
+}
+.advan__items {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.advan__item {
+  position: relative;
+  width: 280px;
+  height: 212px;
+  padding: 65px 15px 15px 15px;
+  background: rgba(21, 43, 75, 0.85);
+  border: 1px solid #7E7E7E;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  font-size: 1.063em;
+  line-height: 150%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFEF99;
+}
+.advan__item::before {
+  position: absolute;
+  top: -26px;
+  right: 0;
+  content: '';
+  width: 108px;
+  height: 82px;
+  background-image: url('../img/advan-ok.svg');
+  background-repeat: no-repeat;
+  background-size: 108px;
+}
+.advantages h2 {
+  margin-bottom: 10px;
+}
+/* -------------- */
+.contact__contact-form {
+  position: relative;
+  width: 315px;
+  height: 357px;
+  padding: 70px 20px 15px 20px;
+  background: rgba(16, 23, 40, 0.87);
+  border: 3px solid #FFFFFF;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  font-size: 1.000em;
+  line-height: 191%;
+  text-align: center;
+  color: #FFFFFF;
+}
+.contact__contact-form::before {
+  position: absolute;
+  top: 19px;
+  left: calc(50% - 20px);
+  width: 40px;
+  height: 40px;
+  content: '';
+  background-image: url('../img/map-point.svg');
+  background-repeat: no-repeat;
+  background-size: 40px;
+
+}
+.contact__contact-form a {
+  display: inline-block;
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #FFD800;
+  text-decoration: none;
+  margin-bottom: 15px;
+}
+.contact__contact-form>p:nth-child(1) {
+  margin-bottom: 25px;
 }
