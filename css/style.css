@@ -1229,22 +1229,24 @@ footer {
 .s-vb,
 .s-wh {
   display: block;
-  width: 65px;
-  height: 65px;
+  width: 50px;
+  height: 50px;
   background-color: #fff;
   border-radius: 50%;
   background-repeat: no-repeat;
   background-position: center;
-  margin-left: 10px;
-  margin-right: 10px;
-  transition: all 0.1s;
+  margin-left: 5px;
+  margin-right: 5px;
+  transition: all 0.2s;
 }
 .s-vb {
   background-image: url('../img/vb.svg');
+  background-size: 30px;
 }
 .s-wh {
   background-image: url('../img/wh.svg');
   margin-right: 25px;
+  background-size: 35px;
 }
 .s-vb:hover,
 .s-wh:hover {
