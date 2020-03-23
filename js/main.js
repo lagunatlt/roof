@@ -1,5 +1,15 @@
 // AOS.init();
 
+$(document).ready(function ($) {
+	$(window).scroll(function () {
+		if ($(this).scrollTop() > 20) {
+			$('.header__top').addClass('fixed-top');
+		} else {
+			$('.header__top').removeClass('fixed-top');
+		}
+	});
+});
+
 $('.work-slider-1').slick({
 	infinite: false,
 	slidesToShow: 1,
@@ -7,8 +17,8 @@ $('.work-slider-1').slick({
 	arrows: true,
 	// nextArrow: $('.next-arrow-1'),
 	// prevArrow: $('.prev-arrow-1'),
-	autoplay: true,
-	autoplaySpeed: 2000,
+	// autoplay: true,
+	// autoplaySpeed: 2000,
 });
 
 $('.work-slider-2').slick({
@@ -18,8 +28,8 @@ $('.work-slider-2').slick({
 	arrows: true,
 	// nextArrow: $('.next-arrow-1'),
 	// prevArrow: $('.prev-arrow-1'),
-	autoplay: true,
-	autoplaySpeed: 2000,
+	// autoplay: true,
+	// autoplaySpeed: 2000,
 });
 $('.work-slider-3').slick({
 	infinite: false,
@@ -28,8 +38,8 @@ $('.work-slider-3').slick({
 	arrows: true,
 	// nextArrow: $('.next-arrow-1'),
 	// prevArrow: $('.prev-arrow-1'),
-	autoplay: true,
-	autoplaySpeed: 2000,
+	// autoplay: true,
+	// autoplaySpeed: 2000,
 });
 $('.services-slider').slick({
 	infinite: false,
@@ -38,8 +48,8 @@ $('.services-slider').slick({
 	arrows: true,
 	// nextArrow: $('.next-arrow-1'),
 	// prevArrow: $('.prev-arrow-1'),
-	autoplay: true,
-	autoplaySpeed: 2000,
+	// autoplay: true,
+	// autoplaySpeed: 2000,
 	variableWidth: true,
 });
 
@@ -70,12 +80,12 @@ document.addEventListener('click', function (e) {
 		map.style.pointerEvents = 'none'
 	}
 })
-/* ---------- */
-$(document).ready(function () {
-	setTimeout(function() {
-		$("#hidden-promo").fancybox().trigger('click');
-	}, 60000)
-});
+/* -----вызов модального окна по истечении времени----- */
+// $(document).ready(function () {
+// 	setTimeout(function() {
+// 		$("#hidden-promo").fancybox().trigger('click');
+// 	}, 60000)
+// });
 
 /* -------вызов модалки по достижении блока------- */
 // var offset = 600;
