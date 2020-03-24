@@ -51,6 +51,30 @@ $('.services-slider').slick({
 	// autoplay: true,
 	// autoplaySpeed: 2000,
 	variableWidth: true,
+	responsive: [
+		{
+			breakpoint: 961,
+			settings: {
+				slidesToShow: 2,
+				slidesToScroll: 2,
+			}
+		},
+		{
+			breakpoint: 721,
+			settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1,
+			}
+		},
+		{
+			breakpoint: 641,
+			settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				arrows: false,
+			}
+		}
+	]
 });
 
 
@@ -81,11 +105,11 @@ document.addEventListener('click', function (e) {
 	}
 })
 /* -----вызов модального окна по истечении времени----- */
-// $(document).ready(function () {
-// 	setTimeout(function() {
-// 		$("#hidden-promo").fancybox().trigger('click');
-// 	}, 60000)
-// });
+$(document).ready(function () {
+	setTimeout(function() {
+		$("#hidden-promo").fancybox().trigger('click');
+	}, 60000)
+});
 
 /* -------вызов модалки по достижении блока------- */
 // var offset = 600;
