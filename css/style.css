@@ -808,12 +808,16 @@ div.completed__item:nth-child(3) {
   padding-bottom: 16px;
 }
 .services-slider {
-  width: 93%;
+  width: 85%;
   height: 386px;
+  margin: 0 auto;
 }
 .services .slick-slide {
   padding: 17px;
+  width: 322px;
 }
+/* .services .slick-slide {
+} */
 .services .slick-list {
   padding-left: 17px;
 }
