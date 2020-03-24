@@ -278,7 +278,7 @@ h1::after {
   border: 3px solid #FFD800;
   border-radius: 10px;
   color: #000;
-  padding: 62px 38px;
+  padding: 62px 25px;
   text-align: center;
   box-shadow: 0px 0px 53px rgba(0, 0, 0, 0.3);
 }
@@ -532,20 +532,21 @@ form input {
   max-width: 589px;
 }
 .best__main-desc {
-  width: 430px;
+  width: 490px;
   /* margin-left: 40px; */
   margin: 0 auto;
   background: rgba(0, 0, 0, 0.3);
   border-radius: 5px;
   color: #fff;
-  font-size: 1.125em;
-  line-height: 150%;
+  font-size: 1.425em;
+  line-height: 160%;
   font-weight: 300;
   padding: 21px 25px;
 }
 .best__main-form {
   margin-top: 35px;
   margin-bottom: 40px;
+  padding: 30px 25px;
 }
 
 /* ---------------- */
@@ -758,6 +759,7 @@ div.completed__item:nth-child(3) {
   font-weight: bold;
   font-size: 1.375em;
   text-transform: uppercase;
+  text-align: center;
   color: #FFFFFF;
 }
 .services__footer {
