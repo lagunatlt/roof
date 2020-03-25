@@ -704,7 +704,15 @@ h2 {
 		footer {
 			padding: 15px 0;
 		}
-	
+	.white-bg::before {
+		display: none;
+	}
+	.s-vb {
+		display: none;
+	}
+	.s-vb-mobile {
+		display: block;
+	}
 
 }
 @media (max-width: 800px) {
@@ -1252,5 +1260,39 @@ h2 {
 	width: 38px;
 	height: 38px;
 }
+/* style.css | http://127.0.0.1:5500/css/style.css */
+
+.contact__contact-form {
+	/* padding: 70px 20px 15px 20px; */
+	padding: 54px 20px 15px 20px;
+}
+
+.contact__contact-form::before {
+	/* top: 19px; */
+	top: 12px;
+}
+
+.contact__contact-form>p:nth-child(1) {
+	/* margin-bottom: 25px; */
+	margin-bottom: 15px;
+}
+
+.contact__contact-form a {
+	/* margin-bottom: 15px; */
+	margin-bottom: 8px;
+}
+
+.footer {
+	flex-direction: column;
+}
+
+/* media.css | http://127.0.0.1:5500/css/media.css */
+
+	.footer__logo-wrap {
+		/* width: 80%; */
+		width: 100%;
+		margin-bottom: 12px;
+	}
+
 
 }
